@@ -1,0 +1,24 @@
+body {
+  background: #edf3f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Public Sans", sans-serif;
+  a {
+    text-decoration: none;
+  }
+}
+@import "./mixin";
+@import "./intro";
+@import "./work";
+@import "./content";
+
+nav {
+  @include nav;
+}
+footer{
+  @include footer;
+}

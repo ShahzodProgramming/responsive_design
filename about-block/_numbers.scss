@@ -1,0 +1,40 @@
+.numbers-about {
+  width: 100%;
+  padding: 50px 0;
+  .numbers {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .box {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      h1 {
+        font-size: 56px;
+        line-height: 72px;
+        color: #ba4270;
+      }
+      hr {
+        width: 100%;
+        height: 2px;
+        color: #36536b;
+      }
+    }
+    @media (max-width: 1200px) {
+      width: 90%;
+      p{
+        display: none;
+      }
+    }
+    @media (max-width: 800px) {
+      p{
+        display: block;
+      }
+      flex-direction: column;
+    }
+  }
+}

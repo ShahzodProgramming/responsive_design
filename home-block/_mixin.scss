@@ -1,0 +1,126 @@
+@mixin nav {
+  padding-top: 50px;
+  width: 100%;
+  .nav {
+    background: #edf3f8;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__content {
+      display: flex;
+      align-items: center;
+      a {
+        margin-right: 20px;
+        font-size: 15px;
+        color: #36536b;
+        opacity: 0.7;
+      }
+      a:hover {
+        color: #36536b;
+        opacity: 1;
+      }
+      ul {
+        display: flex;
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+    &_btn {
+      i {
+        display: none;
+      }
+    }
+    &_btn button {
+      @include btn;
+    }
+  }
+  @media (max-width: 1200px) {
+    .nav {
+      width: 90%;
+    }
+  }
+  @media (max-width: 700px) {
+    .nav {
+      width: 90%;
+      ul {
+        display: none;
+      }
+      &_btn {
+        button {
+          display: none;
+        }
+        i {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@mixin btn {
+  padding: 10px;
+  border: 0;
+  height: 40px;
+  background: #ba4270;
+  border-radius: 24px;
+  font-size: 15px;
+  color: #fbfcfe;
+  &:hover {
+    background: #da6d97;
+    cursor: pointer;
+  }
+}
+
+@mixin footer {
+  padding: 50px 0;
+  width: 100%;
+  background: #1b262f;
+  .footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .divide {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      ul {
+        display: flex;
+        li {
+          margin-right: 20px;
+          a {
+            color: #fbfcfe;
+            opacity: 0.7;
+          }
+          a:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .divide:nth-child(2){
+      i{
+        color: white;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .footer{
+      width: 90%;
+    }  
+  }
+  @media (max-width: 500px) {
+    .footer{
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      .divide:nth-child(1){
+        flex-direction: column;
+      }
+    }
+  }
+}

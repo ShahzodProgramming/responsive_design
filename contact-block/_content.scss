@@ -1,0 +1,85 @@
+.price-pricing {
+  padding: 50px 0;
+  width: 100%;
+  .price {
+    margin: 0 auto;
+    width: 1200px;
+    .content {
+      padding: 50px 0;
+      display: flex;
+      gap: 40px;
+      &_title {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        color: #36536b;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+      &_box {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-size: 32px;
+          line-height: 40px;
+          letter-spacing: -0.246154px;
+          color: #ba4270;
+        }
+        h1 {
+          font-size: 56px;
+          line-height: 72px;
+          letter-spacing: -0.430769px;
+          color: #36536b;
+        }
+        ul {
+          padding: 20px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+    button {
+      margin-top: 20px;
+      width: 150px;
+      height: 50px;
+      background: transparent;
+      color: black;
+      border: 2px solid;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      color: #36536b;
+      transition: 0.3s;
+      &:hover{
+        background: #36536B;
+        color: white;
+      }
+    }
+    hr {
+      background: #36536b;
+      mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+  }
+  @media (max-width: 1200px) {
+    .price {
+      width: 90%;
+    }
+    .content {
+      text-align: center;
+    }
+  }
+  @media (max-width: 800px) {
+    .price {
+      width: 90%;
+      hr{margin: 0 auto;
+        max-width: 400px;
+      }
+    }
+    .content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
