@@ -423,6 +423,7 @@ footer .footer .divide:nth-child(2) i {
 }
 .price-pricing .price .content_box {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .price-pricing .price .content_box h2 {

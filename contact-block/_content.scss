@@ -17,6 +17,7 @@
     }
       &_box {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         h2 {
           font-size: 32px;
