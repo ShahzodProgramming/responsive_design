@@ -459,7 +459,7 @@ footer .footer .divide:nth-child(2) i {
   transition: 0.3s;
 }
 .price-pricing .price button:hover {
-  background: #36536B;
+  background: #36536b;
   color: white;
 }
 .price-pricing .price hr {
@@ -543,6 +543,10 @@ footer .footer .divide:nth-child(2) i {
   }
 }
 @media (max-width: 500px) {
+  .content-about .content h1 {
+    text-align: center;
+    font-size: 30px;
+  }
   .content-about .content .box {
     flex-direction: column;
     align-items: center;
